@@ -1,0 +1,77 @@
+.navbar {
+    background-color: rgb(255, 255, 255);
+
+    &__logo {
+        display: block;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    @media(min-width:992px) {
+        padding: 1.5rem 0rem;
+
+        &__logo {
+            width: 170px;
+        }
+
+        &__container {
+            align-items: center;
+        }
+    }
+}
+
+.menu-wrapper {
+    @media(min-width:992px) {
+        flex-grow: 1
+    }
+}
+
+.menu-list {
+    @media(min-width:992px) {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-grow: 1;
+
+        &__item {
+            font-size: 1rem;
+            padding: 0px 30px;
+        }
+
+        &__link {
+            color: #000;
+            font-weight: 500;
+        }
+    }
+}
+
+.qk-contact-btn {
+    position: relative;
+    z-index: 10;
+    color: #000;
+    font-weight: 500;
+    height: 2.5rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+
+    span {
+        position: absolute;
+        z-index: -1;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 2.5rem;
+        background-color: #eee;
+        left: 0;
+        transition: width 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    &:hover {
+        span {
+            width: 100%;
+        }
+    }
+}

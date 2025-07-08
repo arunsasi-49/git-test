@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 0px 20px;
+}
+@media (min-width: 992px) {
+  .container {
+    padding: 0px 100px;
+  }
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+}
+.navbar__logo {
+  display: block;
+}
+.navbar__container {
+  display: flex;
+}
+@media (min-width: 992px) {
+  .navbar {
+    padding: 1.5rem 0rem;
+  }
+  .navbar__logo {
+    width: 170px;
+  }
+  .navbar__container {
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-wrapper {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
+  }
+  .menu-list__item {
+    font-size: 1rem;
+    padding: 0px 30px;
+  }
+  .menu-list__link {
+    color: #000;
+    font-weight: 500;
+  }
+}
+
+.qk-contact-btn {
+  position: relative;
+  z-index: 10;
+  color: #000;
+  font-weight: 500;
+  height: 2.5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.qk-contact-btn span {
+  position: absolute;
+  z-index: -1;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+  background-color: #eee;
+  left: 0;
+  transition: width 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.qk-contact-btn:hover span {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
